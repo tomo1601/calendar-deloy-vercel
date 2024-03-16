@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Providers from "./provider";
-import ThemeSwitcher from "./ThemeSwitcher";
+// import Providers from "./provider";
+// import ThemeSwitcher from "./ThemeSwitcher";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${inter.className} bg-custom-blue-light`}>
-          <Providers>
+          {/* <Providers> */}
             {/* <ThemeSwitcher/> */}
             {children}
-          </Providers>
+          {/* </Providers> */}
       </body>
     </html>
   );
